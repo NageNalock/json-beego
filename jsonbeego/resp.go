@@ -8,9 +8,9 @@ type JsonResI interface {
 }
 
 type JsonRes struct {
-	Code Code        `jsonbeego:"code"`
-	Msg  string      `jsonbeego:"msg"`
-	Data interface{} `jsonbeego:"data"`
+	Code Code        `json:"code"`
+	Msg  string      `json:"msg"`
+	Data interface{} `json:"data"`
 }
 
 func (res *JsonRes) Error() *JsonRes {

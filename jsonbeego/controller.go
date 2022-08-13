@@ -12,6 +12,6 @@ type JsonController struct {
 
 func (c *JsonController) Return(res JsonResI) {
 	c.res = res
-	c.Data["jsonbeego"] = c.res
+	c.Data["json"] = c.res
 	c.ServeJSON()
 }
