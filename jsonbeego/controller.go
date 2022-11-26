@@ -1,4 +1,4 @@
-package jsonbeego
+package jbeego
 
 import (
 	"github.com/beego/beego/v2/server/web"

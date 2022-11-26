@@ -1,4 +1,4 @@
-package jsonbeego
+package jbeego
 
 type JsonResI interface {
 	Error() *JsonRes
@@ -30,4 +30,3 @@ func (res *JsonRes) ErrorWithErr(err error) *JsonRes {
 func (res *JsonRes) IsErr() bool {
 	return res.Code != Success
 }
-

@@ -1,13 +1,13 @@
-package example
+package pkg
 
 import "github.com/NageNalock/json-beego/jsonbeego"
 
 type TestController struct {
-	jsonbeego.JsonController
+	jbeego.JsonController
 }
 
 func (c *TestController) Get() {
-	res := new(jsonbeego.JsonRes)
+	res := new(jbeego.JsonRes)
 	defer c.Return(res)
 
 	res.Data = "hello world"

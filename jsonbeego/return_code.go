@@ -1,4 +1,4 @@
-package jsonbeego
+package jbeego
 
 type Code int32
 
